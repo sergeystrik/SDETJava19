@@ -1,0 +1,15 @@
+Loops help us repeat a block of code
+until and condition fails.There are 4 main types of loops in Java.
+1) While loop
+2) Do While loop
+3) For loop
+4) Enhanced for loops
+While loop:
+When we don't know the number of iterations be performed
+while loop is the best type of loop to use in that scenario.
+Example we are searching for the product on amazon we keep clicking
+the next button until we find it.
+Do while loop:
+When we want to execute the loop at least once
+before we check the condition when we ll be using
+For-used in situation  when we know quantity in advance(example 10 times)

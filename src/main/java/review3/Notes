@@ -1,0 +1,10 @@
+Scanner Class in java:
+ Scanner is a class just like the classes that we create.
+ but it is specially designed so that others can use it.
+  This class has a lot of methods which can help us take user input
+ Logical operators:
+    Logical operators are symbols that help us to combine multiple conditions
+    There are 3 logical operators in Java:
+      AND(&&)
+      OR(||)
+      NOT(!)
