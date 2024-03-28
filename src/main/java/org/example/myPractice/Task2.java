@@ -3,8 +3,8 @@ package org.example.myPractice;
 import java.util.Scanner;
 //Write a program that reads two integers from the keyboard.
 //
-//If the first number is greater, then you need to display their difference, otherwise do nothing.
-//
+//If the first number is greater, then you need to display their difference,
+// otherwise do nothing.
 //Input example:
 public class Task2 {
     public static void main(String[] args) {
