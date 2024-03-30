@@ -1,0 +1,9 @@
+What is Class:
+  Class is simply a file that contains a lot of things methods is one of them.
+  Each method contains code to do something.When we want our pc to dat task,we create
+   the object of class ,and  we call that method.
+Method:
+   method is a block of code that performs a specific task or action.
+   It's a reusable piece of code that can be called from other parts
+   of a program. Methods are used to organize code into logical
+   units, improve code readability, and facilitate code reuse.
