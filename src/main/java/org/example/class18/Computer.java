@@ -7,7 +7,7 @@ package org.example.class18;
 //Create objects of child classes and store them into array.
 // Loop through each object and execute available methods.
 
-public class Computer {
+public class  Computer {
     void turnOn(){
 
         System.out.println("is turning on");
