@@ -6,19 +6,13 @@ import java.util.ArrayList;
 
 public class E6 {
     public static void main(String[] args) {
-        ArrayList<Integer> evenNumbers = new ArrayList<>();
-        for (int i = 2; i <= 500; i += 2) {
-            evenNumbers.add(i);
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i <= 500; i += 2) {
+            numbers.add(i);
         }
-        removeNumbers(evenNumbers);
-        System.out.println(evenNumbers);
+        System.out.println(numbers);
+        numbers.removeIf(c -> c % 5 == 0);
+        System.out.println(numbers);
     }
-    public static void removeNumbers(ArrayList<Integer> numbers) {
-        for (int i = numbers.size() - 1; i >= 0; i--) {
-            if (numbers.get(i) % 5 == 0) {
-                numbers.remove(i);
-            }
-        }
-        }
-    }
+}
 
