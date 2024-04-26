@@ -12,43 +12,43 @@ import java.util.List;
 import java.util.Map;
 
 public class ExcelReader {
-    public static List<Map<String, String>> read(String path, String sheetName) throws IOException {
+    public static List<Map<String,String>> read(String path,String sheetName)  {
 
-        FileInputStream fileInputStream = new FileInputStream(path);
-        XSSFWorkbook excelFile = new XSSFWorkbook(fileInputStream);
+        List<Map<String,String>> excelData=new ArrayList<>();
 
-        Sheet sheet = excelFile.getSheet(sheetName);
-        List<Map<String, String>> excelData = new ArrayList<>();
-        Row headerRow = sheet.getRow(0);
+        try(FileInputStream fileInputStream=new FileInputStream(path);
+            XSSFWorkbook excelFile=new XSSFWorkbook(fileInputStream)){
+            Sheet sheet=excelFile.getSheet("Sheet1");
+            Row headerRow=sheet.getRow(0);
+            for (int i =1 ; i < sheet.getPhysicalNumberOfRows(); i++) {
 
-        for (int i = 1; i < sheet.getPhysicalNumberOfRows(); i++) {
+                Map<String,String> rowMap=new LinkedHashMap<>();
+                Row row=sheet.getRow(i);
+                for (int j = 0; j <row.getPhysicalNumberOfCells(); j++) {
+                    String key=headerRow.getCell(j).toString();
+                    String value=row.getCell(j).toString();
+                    rowMap.put(key,value);
+                }
 
-            Map<String, String> rowMap = new LinkedHashMap<>();
-
-            Row row = sheet.getRow(i);
-
-            for (int j = 0; j < row.getPhysicalNumberOfCells(); j++) {
-                String key = headerRow.getCell(j).toString();
-                String value = row.getCell(j).toString();
-                rowMap.put(key, value);
-
-
+                excelData.add(rowMap);
             }
-            excelData.add(rowMap);
-
+        }catch (IOException io){
+            io.printStackTrace();
         }
         return excelData;
 
     }
 
-    public static List<Map<String, String>> read(String sheetName) throws IOException {
-        return read(Constants.EXCEL_FILE_PATH, sheetName);
+
+    public static List<Map<String,String>> read(String sheetName)  {
+        return read(Constants.EXCEL_FILE_PATH,sheetName);
     }
 
 
-    public static List<Map<String, String>> read() throws IOException {
 
-        return read(Constants.EXCEL_FILE_PATH, "Sheet1");
+    public static List<Map<String,String>> read()  {
+
+        return read(Constants.EXCEL_FILE_PATH,"Sheet1");
 
     }
 }
