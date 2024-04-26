@@ -1,4 +1,6 @@
-package org.example.utils;
+package org.example.class24;
+
+import org.example.utils.ConfigReader;
 
 import java.io.IOException;
 
