@@ -1,0 +1,10 @@
+In this implementation:
+
+We define an AnimalBehavior interface with methods eat(), sleep(), and makeSound().
+We create an abstract class Animal that implements AnimalBehavior and defines properties like name and age.
+It also declares an abstract method displayInformation() for showing details about the animal.
+The Mammal and Bird classes extend Animal and implement specific behaviors for mammals and birds, respectively.
+ They override methods like eat(), sleep(), and makeSound().
+We demonstrate polymorphism and method overriding by creating instances of Mammal and Bird and calling the behavior
+ methods on them.
+The displayInformation() method displays information about each animal, showcasing data encapsulation and abstraction.
