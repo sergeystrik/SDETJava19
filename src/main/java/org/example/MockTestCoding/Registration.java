@@ -1,7 +1,7 @@
 package org.example.MockTestCoding;
 
 public class Registration {
-    private String email;
+    private String email;// Private instance variable
     private String userName;
     private String password;
 
