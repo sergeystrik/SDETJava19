@@ -1,4 +1,0 @@
-string is not primitive data type that is used to store multiple characters in a variable
-String concatenation:
-String concatenation allows us to join two string together
-
