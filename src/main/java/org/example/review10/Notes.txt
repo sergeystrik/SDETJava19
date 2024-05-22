@@ -1,0 +1,21 @@
+FileHandling:
+    Reading/writing data to files through programming is called FileHandling.
+To read/write Data to file:
+    1) Location of the file.
+    2) Navigate to the file.
+    3) A Suitable class to read/write the data to a file.
+How to get the location of a file in intellij?
+    1) right-click on file ->copy path reference-> Absolute path
+How do we navigate to files through programming?
+    We can use FIleInputStream class to do the navigation.
+Why do Testers use Configuration files?
+    So that we can store sensitive info like usernames and passwords outside
+    of the code.
+Why do Testers use Excel files?
+    As a tester, we store testing data in Excel file. We store all of
+    our data when we perform data-driven testing.
+Exceptions:
+    Are the errors that we face at run time they disturb the
+    normal flow of the program. There are two main types of
+    Exceptions Checked and Unchecked.
+

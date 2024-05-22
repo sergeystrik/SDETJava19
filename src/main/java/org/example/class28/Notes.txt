@@ -1,0 +1,23 @@
+Exception:
+    1) These are types of errors that we face while programming.
+    They happen at run time when computer can't do a task
+    because we are asking the computer to do something that
+    is not possible, or it does not have the resources.
+    2) It's an unwanted event that happens at runtime. it
+    disrupts the normal flow of the programs.
+Why:
+    These types of issues are very expensive to fix.
+How to Fix/Avoid Exceptions:
+    We can avoid these exceptions by using the try catch block.
+Types of Exceptions:
+    Exception has two main types checked and non-checked.
+    Checked Exception:
+        These important exceptions which must be handled with try catch
+        blocks. Java is going to give us error if we don't.
+    Non-Checked:
+        These are not very important. They can be avoided
+        without try catch block.
+
+
+
+

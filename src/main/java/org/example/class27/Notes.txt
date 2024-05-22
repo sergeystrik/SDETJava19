@@ -1,0 +1,3 @@
+Exceptions:
+    An unwanted behavior which disrupts the normal flow of
+    our program is called exception in java.
